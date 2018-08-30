@@ -1,3 +1,7 @@
+* {
+  background-color: #222;
+}
+
 .App {
   text-align: center;
 }
@@ -8,14 +12,10 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  margin: 200px auto;
   padding: 20px;
   color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
+  background-color: #222;
 }
 
 .App-intro {
