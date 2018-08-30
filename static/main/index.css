@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.658);
 }
 
 .title {
-    margin: 100px atuo;
+    margin: 100px auto;
     text-align: center;
+    color: rgb(247, 240, 217);
 }
