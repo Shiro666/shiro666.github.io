@@ -32,7 +32,17 @@ module.exports = {
     target: 'web',
 
     //模块配置
-    module: {},
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    },
 
     //插件配置
     plugins: [
