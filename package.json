@@ -1,0 +1,28 @@
+{
+  "name": "shiro666.github.io",
+  "version": "1.0.0",
+  "description": "This project has been created using **webpack scaffold**, you can now run",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shiro666/shiro666.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shiro666/shiro666.github.io/issues"
+  },
+  "homepage": "https://shiro666.github.io",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
