@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
+    // 可以更改模式
+    mode: "development",
+
     // 入口
     entry: ['./src/index.js'],
     
@@ -15,23 +18,23 @@ module.exports = {
 
     // 开发环境
     devServer: {
-        //运行时文件打包文件夹（不可见）
+        // 运行时文件打包文件夹（不可见）
         contentBase:path.join(__dirname, './src'),
         publicPath: '/',
-        //运行端口
+        // 运行端口
         host: 'localhost',
         port: 80,
         // 服务器文件压缩
         compress: true,
-        //自动打开浏览器
+        // 自动打开浏览器
         open: true,
-        //热更新
+        // 热更新
         hot: true,
     },
 
     target: 'web',
 
-    //模块配置
+    // 模块配置
     module: {
         rules: [
             {
@@ -40,11 +43,18 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    {loader: 'style-loader'},
+                    {loader: 'css-loader'}
+                ]
             }
         ]
     },
 
-    //插件配置
+    // 插件配置
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
@@ -54,9 +64,6 @@ module.exports = {
         })
     ],
 
-    //可以更改模式
-    mode: "development",
-
-    //配置解析
+    // 配置解析
     resolve: {},
 }
