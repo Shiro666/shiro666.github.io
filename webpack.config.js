@@ -45,10 +45,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
+                test: /\.css$|\.scss$|\.sass$/,
                 use: [
                     {loader: 'style-loader'},
-                    {loader: 'css-loader'}
+                    {loader: 'css-loader'},
+                    {loader: 'sass-loader'}
                 ]
             }
         ]
