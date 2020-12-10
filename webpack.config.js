@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
 
@@ -62,9 +63,12 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html', // 生成的html文件名（相对路径：将生成到output.path指定的dist目录下）
             // filename: path.join(__dirname, 'index.html'), // 生成的html(绝对路径：可用于生成到根目录)
-        })
+        }),
+        new ProgressBarPlugin()
     ],
 
     // 配置解析
-    resolve: {},
+    resolve: {
+        modules: [path.resolve(__dirname, 'node_modules')],
+    },
 }
