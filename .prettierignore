@@ -1,0 +1,7 @@
+.eslintrc.js
+webpack-config
+dist
+node_modules
+package.json
+package-lock.json
+.prettierrc.js
