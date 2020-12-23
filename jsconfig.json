@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"],
+            "@components/*": ["src/components/*"],
+            "@pages/*": ["src/pages/*"],
+            "@styles/*": ["src/styles/*"],
+            "@router/*": ["src/router/*"]
+        },
+        "target": "ES6",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

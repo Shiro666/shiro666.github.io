@@ -27,7 +27,7 @@ module.exports = {
         "indent": ["warn", 4],
         // 变量声明未引用
         "no-unused-vars": [
-            "error",
+            "warn",
             {
                 "args": "none",
                 "ignoreRestSiblings": true

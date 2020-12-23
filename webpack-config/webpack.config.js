@@ -71,5 +71,12 @@ module.exports = {
     // 配置解析
     resolve: {
         modules: [path.resolve(__dirname, '../node_modules')],
+        alias: {
+            '@src': path.resolve(__dirname, '../src'),
+            '@components': path.resolve(__dirname, '../src/components'),
+            '@styles': path.resolve(__dirname, '../src/styles'),
+            '@pages': path.resolve(__dirname, '../src/pages'),
+            '@router': path.resolve(__dirname, '../src/router')
+        }
     },
 }

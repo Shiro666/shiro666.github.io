@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '@styles/reset.scss';
 
-import Home from './pages/home';
+import RouterView from '@router/router.js';
 
 // webpack-dev-server 热更新
 if (module.hot) {
@@ -9,4 +10,4 @@ if (module.hot) {
 }
 
 let root = document.getElementById('root');
-ReactDOM.render(<Home />, root);
+ReactDOM.render(<RouterView />, root);
