@@ -8,7 +8,8 @@ export default class RouterView extends React.Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route path="/" component={Home} />
+                    <Route path="/home" component={Home} />
                 </Switch>
             </Router>
         );
