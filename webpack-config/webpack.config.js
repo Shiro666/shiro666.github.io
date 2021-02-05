@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
 
@@ -66,6 +67,7 @@ module.exports = {
             // filename: path.join(__dirname, 'index.html'), // 生成的html(绝对路径：可用于生成到根目录)
         }),
         new ProgressBarPlugin(),
+        new BundleAnalyzerPlugin(),
     ],
 
     // 配置解析
